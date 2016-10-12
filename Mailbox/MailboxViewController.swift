@@ -10,11 +10,16 @@ import UIKit
 
 class MailboxViewController: UIViewController {
     
+    @IBOutlet weak var allMessageView: UIView!
     @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var rescheduleView: UIImageView!
     
     @IBOutlet weak var deleteIcon: UIImageView!
+    
+    @IBOutlet weak var feedView: UIImageView!
+    
+    
     
     var rescheduleViewImage: CGPoint!
     
@@ -35,8 +40,6 @@ class MailboxViewController: UIViewController {
         mailBoxScrollView.contentSize = CGSize(width: 375, height: 1518)
         rescheduleView.alpha = 0
         deleteIcon.isHidden = true
-        
-        
     }
     
     //Action for pan gesture
@@ -52,12 +55,13 @@ class MailboxViewController: UIViewController {
 
 else if sender.state == .changed {
             self.messageView.center = CGPoint(x: self.messageViewOriginalCenter.x + translation.x, y: self.messageViewOriginalCenter.y)
-         
             
           if  translation.x < 60 {
             let backgroundColor = UIColor.yellow
            
              rightImage.backgroundColor = backgroundColor
+            
+            
             
              self.rescheduleView.alpha = 0.5
           }
@@ -74,13 +78,17 @@ else if sender.state == .changed {
               deleteIcon.isHidden = false
             
             }
+          else {
+            
+            messageView.backgroundColor = UIColor.lightGray
+            }
          
             
         }
         
         
         else if sender.state == .ended {
-                UIView.animateKeyframes(withDuration: 0.5, delay: 0.1, options: [], animations: { 
+                UIView.animateKeyframes(withDuration: 0.5, delay: 0.5, options: [], animations: {
                 self.messageView.center = self.messageViewOriginalCenter
                     
                     self.rescheduleView.alpha = 1
@@ -90,10 +98,8 @@ else if sender.state == .changed {
                         
                UIView.animateKeyframes(withDuration: 1.0, delay: 1.0, options: [], animations:  {
                 
-                 self.rescheduleView.alpha = 0.3
-                 self.rescheduleView.isHidden = true
+                   self.rescheduleView.isHidden = true
                 
-                 self.rescheduleView.alpha = 0.01
                             
                     })
 
@@ -102,7 +108,12 @@ else if sender.state == .changed {
             
         
     }
+        
+        
+        
+        
 }
-
+    
+   
 }
 

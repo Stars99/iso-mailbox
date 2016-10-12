@@ -14,6 +14,7 @@
 		3CAD7A231DA71F18000B2FC4 /* MailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD7A221DA71F18000B2FC4 /* MailboxTests.swift */; };
 		3CAD7A2E1DA71F18000B2FC4 /* MailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD7A2D1DA71F18000B2FC4 /* MailboxUITests.swift */; };
 		3CAD7A3C1DA71F96000B2FC4 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD7A3B1DA71F96000B2FC4 /* MailboxViewController.swift */; };
+		3CC3AB561DADFF8300BD5204 /* IOSMail.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3CC3AB551DADFF8300BD5204 /* IOSMail.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3CAD7A2D1DA71F18000B2FC4 /* MailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUITests.swift; sourceTree = "<group>"; };
 		3CAD7A2F1DA71F18000B2FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CAD7A3B1DA71F96000B2FC4 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		3CC3AB551DADFF8300BD5204 /* IOSMail.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IOSMail.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		3CAD7A011DA71F17000B2FC4 = {
 			isa = PBXGroup;
 			children = (
+				3CC3AB551DADFF8300BD5204 /* IOSMail.gif */,
 				3CAD7A0C1DA71F17000B2FC4 /* Mailbox */,
 				3CAD7A211DA71F17000B2FC4 /* MailboxTests */,
 				3CAD7A2C1DA71F18000B2FC4 /* MailboxUITests */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CAD7A181DA71F17000B2FC4 /* LaunchScreen.storyboard in Resources */,
+				3CC3AB561DADFF8300BD5204 /* IOSMail.gif in Resources */,
 				3CAD7A151DA71F17000B2FC4 /* Assets.xcassets in Resources */,
 				3CAD7A131DA71F17000B2FC4 /* Main.storyboard in Resources */,
 			);
@@ -503,6 +507,7 @@
 				3CAD7A341DA71F18000B2FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAD7A351DA71F18000B2FC4 /* Build configuration list for PBXNativeTarget "MailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				3CAD7A371DA71F18000B2FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAD7A381DA71F18000B2FC4 /* Build configuration list for PBXNativeTarget "MailboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				3CAD7A3A1DA71F18000B2FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
